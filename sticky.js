@@ -20,7 +20,7 @@ let outputName = 'sticky';
   function sticky(selectors, top = 0) {
     let elements = document.querySelectorAll(selectors);
     for (let i = 0; i < elements.length; ++i) {
-      elements[i].dataset['originOffsetTop'] = elements[i].offsetTop
+      elements[i].dataset['originOffsetTop'] = elements[i].getBoundingClientRect().top + ((window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop)
     }
     window.addEventListener('scroll', onScroll(elements, top));
 
