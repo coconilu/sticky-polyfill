@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sticky polyfill</title>
+  <script src="./sticky.js"></script>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    div:not(.container) {
+      height: 100px;
+      width: 100%;
+    }
+
+    .container {
+      height: 2000px;
+    }
+
+    .d1 {
+      background: #2e7866;
+    }
+
+    .d2 {
+      background: #f2c640;
+    }
+
+    .d3 {
+      background: #3f485b;
+      /* position: sticky; */
+    }
+
+    .d4 {
+      background: #1f2b40;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="d4"></div>
+  </div>
+  <script>
+    sticky('.d3')
+  </script>
+</body>
+
+</html>
