@@ -27,8 +27,8 @@ let outputName = 'sticky';
     function onScroll(elements, top) {
       let shouldRun = true
       return () => {
-        let scrollY = window.pageYOffset;
         if (shouldRun) {
+          let scrollY = window.pageYOffset;
           // 节流代码
           shouldRun = false
           for (let i = 0; i < elements.length; ++i) {
