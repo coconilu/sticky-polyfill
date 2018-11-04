@@ -31,7 +31,7 @@ function sticky(selectors, top = 0)
 ## 使用NPM安装
 
 ```CMD
-npm i  --save
+npm i sticky-polyfill --save
 ```
 
 ## 项目地址
