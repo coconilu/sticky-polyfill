@@ -18,7 +18,7 @@
 
 该库仅对外提供一个接口：
 
-```
+```JavaScript
 /**
 * position: sticky的polyfill
 * 推荐在文档加载完成之后（‘DOMContentLoaded’事件）调用
@@ -30,7 +30,7 @@ function sticky(selectors, top = 0)
 
 ## 使用NPM安装
 
-```
+```CMD
 npm i  --save
 ```
 

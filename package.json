@@ -1,0 +1,23 @@
+{
+  "name": "sticky-polyfill",
+  "version": "1.0.0",
+  "description": "polyfill for position:sticky",
+  "main": "sticky.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coconilu/sticky-polyfill.git"
+  },
+  "keywords": [
+    "sticky",
+    "polyfill"
+  ],
+  "author": "coconilu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coconilu/sticky-polyfill/issues"
+  },
+  "homepage": "https://github.com/coconilu/sticky-polyfill#readme"
+}
